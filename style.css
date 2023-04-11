@@ -85,8 +85,10 @@ img {
 
 .card-content p {
   font-family: var(--fonte-regular);
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 400;
+  margin-left: -2rem;
+  margin-right: -2rem;
   color: #000;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -144,13 +146,14 @@ img {
     padding-bottom: 0.3rem;
     font-family: var(--fonte-regular);
     color: var(--input-color);
-    font-size: 2.3rem;
+    font-size: 2.0rem;
     font-weight: bold;
     text-align: center;
   }
 
   .confirm {
-    height: 50%;
+    height: 40%;
+    margin-top: 2.5rem;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   }
 

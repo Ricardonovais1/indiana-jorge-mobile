@@ -6,20 +6,30 @@ const btnArea = document.querySelector('.bottom-1');
 
 
 btnArea.addEventListener('click', () => {
-    btnUp.classList.toggle('hide')
-    btnDw.classList.toggle('hide')
+    btnUp.classList.add('hide');
+    btnDw.classList.remove('hide');
+    setTimeout(() => {
+        btnUp.classList.remove('hide');
+        btnDw.classList.add('hide');
+    }, 300);
 })
 
 // Botão Confirmar
 
 const confirmUp = document.querySelector('#conf-up');
 const confirmDw = document.querySelector('#conf-dw');
-const btnArea2 = document.querySelector('.bottom-2');
+// const btnArea2 = document.querySelector('.bottom-2');
+const confirmArea = document.querySelector('.confirm-area');
 
 
-btnArea2.addEventListener('click', () => {
-    confirmUp.classList.toggle('hide')
-    confirmDw.classList.toggle('hide')
+
+confirmArea.addEventListener('click', () => {
+    confirmUp.classList.add('hide');
+    confirmDw.classList.remove('hide');
+    setTimeout(() => {
+        confirmUp.classList.remove('hide')
+        confirmDw.classList.add('hide')
+    }, 300);
 })
 
 // Botão Aioros
@@ -30,8 +40,12 @@ const btnArea3 = document.querySelector('.bottom-3');
 
 
 btnArea3.addEventListener('click', () => {
-    aiorosUp.classList.toggle('hide')
-    aiorosDw.classList.toggle('hide')
+    aiorosUp.classList.add('hide');
+    aiorosDw.classList.remove('hide');
+    setTimeout(() => {
+        aiorosUp.classList.remove('hide')
+        aiorosDw.classList.add('hide')
+    }, 300);
 })
 
 

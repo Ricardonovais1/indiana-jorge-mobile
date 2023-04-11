@@ -139,6 +139,7 @@ img {
     height: 3rem;
     width: 8rem;
     outline: none;
+    margin-top: 1.5rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     font-family: var(--fonte-regular);
@@ -149,8 +150,12 @@ img {
   }
 
   .confirm {
-    height: 30%;
+    height: 50%;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+
+  .confirm-area {
+    height: 50%;
   }
 
   .backgound-confirm {

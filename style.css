@@ -191,14 +191,108 @@ img {
     height: 40%;
   }
 
+   /* ==== TABLET GRANDE ==== */
+
+   @media (max-width: 1280px) {
+
+    .card {
+      width: 40%;
+      height: 20%;
+    }
+
+    .nickname {
+      height: 5rem;
+      width: 20vw;
+      margin-top: -3rem;
+      /* margin-bottom: 1rem; */
+      font-size: 3rem;
+    }
+
+    .confirm {
+      height: 60%;
+      margin-bottom: 4rem;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+    }
+  }
+
+  /* ==== TABLET ==== */
+
+  @media (max-width: 912px) {
+
+    .card {
+      width: 60%;
+    }
+
+    .nickname {
+      height: 8rem;
+      width: 40vw;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-size: 5rem;
+    }
+
+    .confirm {
+      height: 60%;
+      margin-bottom: 4rem;
+    }
+
+    .card-content p {
+      font-size: 2rem;
+    }
+  }
+
   /* ==== MOBILE ==== */
-  @media (max-width: 768px) {
+
+  @media (max-width: 540px) {
 
     .card {
       width: 80%;
     }
+
+    .nickname {
+      height: 5rem;
+      width: 40vw;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+
+    .confirm {
+      height: 40%;
+      margin-bottom: 4rem;
+    }
+
     .card-content p {
-      font-size: 0.8rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* ==== MOBILE MINI ==== */
+
+  @media (max-width: 300px) {
+
+    .card {
+      width: 80%;
+    }
+
+    .nickname {
+      height: 5rem;
+      width: 40vw;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .confirm {
+      height: 40%;
+      margin-bottom: 4rem;
+    }
+
+    .card-content p {
+      font-size: 1rem;
     }
   }
 

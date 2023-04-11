@@ -138,6 +138,14 @@ img {
     background-color: transparent;
     height: 3rem;
     width: 8rem;
+    outline: none;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-family: var(--fonte-regular);
+    color: var(--input-color);
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
   }
 
   .confirm {

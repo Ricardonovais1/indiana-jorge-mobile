@@ -18,19 +18,27 @@ btnArea.addEventListener('click', () => {
 
 const confirmUp = document.querySelector('#conf-up');
 const confirmDw = document.querySelector('#conf-dw');
-// const btnArea2 = document.querySelector('.bottom-2');
 const confirmArea = document.querySelector('.confirm-area');
+const nickInput = document.getElementById('nick');
 
+nickInput.addEventListener('input', () => {
+    if (nickInput.value.length == 3) {
+        confirmUp.classList.remove('hide');
+        confirmDw.classList.add('hide');
+    }
+});
 
 
 confirmArea.addEventListener('click', () => {
-    confirmUp.classList.add('hide');
-    confirmDw.classList.remove('hide');
-    setTimeout(() => {
-        confirmUp.classList.remove('hide')
-        confirmDw.classList.add('hide')
-    }, 300);
-})
+    if (confirmDw.classList.contains('hide')) {
+        confirmUp.classList.add('hide');
+        confirmDw.classList.remove('hide');
+        setTimeout(() => {
+            confirmUp.classList.remove('hide')
+            confirmDw.classList.add('hide')
+        }, 300);
+    }
+});
 
 // Botão Aioros
 

@@ -23,6 +23,7 @@ a {
 
 img {
   border-style: none;
+  touch-action: none;
 }
 
 
